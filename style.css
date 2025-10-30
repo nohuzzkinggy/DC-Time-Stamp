@@ -1,0 +1,113 @@
+body {
+  background: #121212;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'mag', sans-serif;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  max-width: 500px;
+  font-family: 'mag', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-family: 'mag', sans-serif;
+}
+
+.inputs label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-family: 'mag', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-family: 'mag', sans-serif;
+  font-size: 1rem;
+}
+
+input,
+select,
+textarea {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+textarea {
+  height: 60px;
+  resize: none;
+}
+
+button {
+  background: #5865f2;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #4752c4;
+}
+
+.presets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.output,
+.unix-output {
+  margin-top: 1rem;
+}
+
+.preview-box {
+  margin-top: 1.5rem;
+  background: #2a2a2a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.preview-box h3 {
+  margin-top: 0;
+  font-size: 1rem;
+  color: #ccc;
+  text-align: center;
+}
+
+.discord-preview {
+  background: #313338;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  color: #dcddde;
+  font-family: "Whitney", "Helvetica Neue", sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'mag';           
+  src: url('Assets/magistral-bold.ttf') format('truetype');
+}

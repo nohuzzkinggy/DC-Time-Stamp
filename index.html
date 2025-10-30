@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord Timestamp Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional: Discord-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Discord Timestamp Generator</h1>
+
+    <div class="inputs">
+      <label>Date:</label>
+      <input type="date" id="date" />
+      <label>Time (UTC):</label>
+      <input type="time" id="time" />
+      <label>Style:</label>
+      <select id="style">
+        <option value="t">Short Time — (3:45 PM)</option>
+        <option value="T">Long Time — (3:45:12 PM)</option>
+        <option value="d">Short Date — (10/30/2025)</option>
+        <option value="D">Long Date — (October 30, 2025)</option>
+        <option value="f" selected>Short Date/Time — (October 30, 2025 3:45 PM)</option>
+        <option value="F">Long Date/Time — (Thursday, October 30, 2025 3:45 PM)</option>
+        <option value="R">Relative — (in 2 hours)</option>
+      </select>
+    </div>
+
+    <div class="presets">
+      <button id="now">Now</button>
+      <button id="hour">+1 Hour</button>
+      <button id="tomorrow">Tomorrow 9AM</button>
+      <button id="midnight">Next Midnight</button>
+    </div>
+
+    <div class="output">
+      <textarea id="output" readonly></textarea>
+      <button id="copy">Copy Tag</button>
+    </div>
+
+    <div class="preview-box">
+      <h3>Discord Preview</h3>
+      <div id="discordPreview" class="discord-preview">—</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
