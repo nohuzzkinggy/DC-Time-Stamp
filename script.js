@@ -13,6 +13,11 @@ function generateTimestamp() {
   const dateTime = new Date(`${dateVal}T${timeVal}:00Z`);
   const unix = Math.floor(dateTime.getTime() / 1000);
   const style = styleSelect.value;
+  if (!dateVal || !timeVal) return;
+
+  const dateTime = new Date(`${dateVal}T${timeVal}:00Z`);
+  const unix = Math.floor(dateTime.getTime() / 1000);
+  const style = styleSelect.value;
   const tag = `<t:${unix}:${style}>`;
 
   output.value = tag;
